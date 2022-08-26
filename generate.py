@@ -1,5 +1,5 @@
 import random
- 
+
 coin = random.choice(["Head", "Tail"])
 print(coin)
 num = random.randint(1, 100)

@@ -1,7 +1,7 @@
 def main():
-    
+
     print(calculate_fuel("Fuel(in fraction): "))
-    
+
 
 def calculate_fuel(prompt):
     while True:
@@ -21,8 +21,6 @@ def calculate_fuel(prompt):
             pass
         except IndexError:
             pass
-        
+
+
 main()
-            
-        
-        
