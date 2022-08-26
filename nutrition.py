@@ -26,6 +26,7 @@ def main():
         print(f"Calories: {calories(user_input, dic_fruit)}")
     
     
+    
 def calories(fruit, dic_fruit):
         return dic_fruit[fruit]
     
