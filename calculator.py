@@ -1,20 +1,16 @@
 # Start of mai
 def main():
 
-    x = float(input("x: "))
-    y = float(input("y: "))
+    x = int(input("x: "))
 
-    z = round((x + y) / 2, 4)
-    a = add_three(z)
-
-    print(f"{z} plus 3 is {a}.")
+    print(f"x square is {square(x)}.")
 
 
 # End of main
 # Start of functions
-def add_three(num):
-    num += 3
-    return num
+def square(num):
+    x = num * num
+    return x
 
-
-main()
+if __name__ == "__main__":
+    main()
