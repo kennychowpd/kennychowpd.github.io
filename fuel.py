@@ -1,26 +1,25 @@
 def main():
-
-    print(calculate_fuel("Fuel(in fraction): "))
-
-
-def calculate_fuel(prompt):
+    fraction = input("Fuel(in fraction): ")
+    percentage = convert(fraction)
+    
+def convert(fraction):
     while True:
-        try:
-            user_input = input(prompt)
-            f = fraction = user_input.split("/")
+            f = fraction.split("/")
             percentage = round(int(f[0]) / int(f[1]) * 100)
-            if percentage <= 1:
-                return "E"
-            elif percentage >= 99:
-                return "F"
-            else:
-                return f"{percentage}%"
-        except ValueError:
-            pass
-        except ZeroDivisionError:
-            pass
-        except IndexError:
-            pass
+            if percentage > 100:
+                raise ValueError
+                break
+            return percentage
+        
 
+def gauge(percentage):
+    if percentage <= 1:
+        return "E"
+    elif percentage >= 99:
+        return "F"
+    else:
+        return f"{percentage}%"
+    
 
-main()
+if __name__ == "__main__": 
+    main()
