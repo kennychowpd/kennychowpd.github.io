@@ -1,13 +1,7 @@
-name = input("What's your name? ")
+name = input("What is your car? ")
 
 match name:
-    case "Kenny":
-        print("hi")
-    case "Adora":
-        print("bye")
-        
-        
-        
-        
-
-        
+    case "Tesla Model S" | "Tesla Model 3" | "Tesla Model X" | "Tesla Model Y":
+        print("Good Choice.")
+    case _ :
+        print("Think about you life decisions again.")
