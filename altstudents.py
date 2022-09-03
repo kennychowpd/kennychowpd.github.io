@@ -6,3 +6,5 @@ students = [
 
 for student in students:
     print(student["name"], student["house"], student["color"], sep=",")
+
+for i in r
