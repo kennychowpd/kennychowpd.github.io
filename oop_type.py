@@ -1,0 +1,6 @@
+print(type([]))
+print(type(123))
+print(type("asd"))
+print(type(list()))
+print(type({}))
+print(type((1, 3)))
