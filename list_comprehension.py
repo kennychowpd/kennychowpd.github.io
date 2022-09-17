@@ -1,5 +1,5 @@
 # list comprehension
-# dict -> list
+# list of dict -> list
 students = [
     {"name": "Hermione", "house": "Gryffindor"},
     {"name": "Harry", "house": "Gryffindor"},
@@ -13,10 +13,19 @@ good_students = [
 for student in sorted(good_students):
     print(student)
     
+# list comprehension
+# list -> list of dict
+student_n1 = ["Hermione", "Harry", "Ron"]
 
+main_char1 = [{"name": student, "house": "Gryffindor"} for student in student_n1]
+
+print(main_char1)
+
+
+# dict comprehension
 # list -> dict
-student_n = ["Hermione", "Harry", "Ron"]
+student_n2 = ["Hermione", "Harry", "Ron"]
 
-main_char = [{"name": student, "house": "Gryffindor"} for student in student_n]
+main_char2 = {student: "Gryffindor" for student in student_n2}
 
-print(main_char)
+print(main_char2)
